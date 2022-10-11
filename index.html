@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/bn-fontboy" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory Game</title>
+  </head>
+
+  <body>
+    <div class="headd">
+      <h1>Matching Game</h1>
+      <h3>Remember and pair</h3>
+    </div>
+
+    <div class="cardContainer">
+      <div id="vct" class="victory"></div>
+      <div class="card" id="card0" data-value="1">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff0" />
+        <img class="backFace" src="cardImg/img1.png" id="bf0" />
+      </div>
+      <div class="card" id="card1" data-value="1">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff1" />
+        <img class="backFace" src="cardImg/img1.png" id="bf1" />
+      </div>
+      <div class="card" id="card2" data-value="2">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff2" />
+        <img class="backFace" src="cardImg/img2.jpg" id="bf2" />
+      </div>
+      <div class="card" id="card3" data-value="2">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff3" />
+        <img class="backFace" src="cardImg/img2.jpg" id="bf3" />
+      </div>
+      <div class="card" id="card4" data-value="3">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff4" />
+        <img class="backFace" src="cardImg/img3.png" id="bf4" />
+      </div>
+      <div class="card" id="card5" data-value="3">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff5" />
+        <img class="backFace" src="cardImg/img3.png" id="bf5" />
+      </div>
+      <div class="card" id="card6" data-value="4">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff6" />
+        <img class="backFace" src="cardImg/img4.png" id="bf6" />
+      </div>
+      <div class="card" id="card7" data-value="4">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff7" />
+        <img class="backFace" src="cardImg/img4.png" id="bf7" />
+      </div>
+      <div class="card" id="card8" data-value="5">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff8" />
+        <img class="backFace" src="cardImg/img5.png" id="bf8" />
+      </div>
+      <div class="card" id="card9" data-value="5">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff9" />
+        <img class="backFace" src="cardImg/img5.png" id="bf9" />
+      </div>
+      <div class="card" id="card10" data-value="6">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff10" />
+        <img class="backFace" src="cardImg/img6.png" id="bf10" />
+      </div>
+      <div class="card" id="card11" data-value="6">
+        <img class="frontFace" src="cardImg/ques.jpg" id="ff11" />
+        <img class="backFace" src="cardImg/img6.png" id="bf11" />
+      </div>
+    </div>
+    <div class="status">
+      <div id="movetxt">Moves:</div>
+      <div class="moveCt" id="move">0</div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

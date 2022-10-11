@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(cardimg/clouds.jpg);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.headd {
+  font-family: "BN FontBoy 3D", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  margin-top: 10px;
+  font-size: 120px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.victory {
+  position: absolute;
+  display: none;
+  z-index: 232323;
+  margin-top: 115px;
+  font-size: 30px;
+  margin-left: 90px;
+  padding: 65px;
+  background-color: rgb(0 0 0 / 56%);
+  border-radius: 10%;
+  color: rgb(255, 255, 255);
+}
+
+.cardContainer {
+  margin: auto;
+  margin-top: 50px;
+  border: 8px solid rgb(140, 2, 2);
+  border-radius: 30px;
+  padding-left: 27px;
+  padding-top: 20px;
+  background-color: rgb(215, 76, 76);
+  height: 460px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(3, 120px);
+  grid-gap: 20px 18px;
+
+  perspective: 1000px;
+}
+.card {
+  border: 3px solid rgb(189, 24, 24);
+  background-color: rgb(189, 24, 24);
+  border-radius: 13px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  width: 120px;
+}
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+.frontFace {
+  position: absolute;
+  backface-visibility: hidden;
+
+  border-radius: 13px;
+}
+.backFace {
+  position: absolute;
+  transform: rotateY(180deg);
+
+  backface-visibility: hidden;
+  border-radius: 13px;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+.status {
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(215, 76, 76);
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(140, 2, 2);
+  border-radius: 18px;
+}
+#movetxt {
+  padding: 5px;
+  font-size: 30px;
+  display: inline;
+}
+#move {
+  font-size: 30px;
+  display: inline;
+}
